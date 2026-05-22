@@ -1,6 +1,8 @@
 package persistance.entity;
 
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
@@ -30,12 +32,13 @@ public class Compra {
 
     @ManyToOne
     @JoinColumn(name = "id_cliente", insertable = false, updatable = false)
+    @JsonBackReference(value = "cliente-compras")
     private Cliente cliente;
 
    // @OneToMany(mappedBy = "producto")
      //CORREGIDO
     @OneToMany(mappedBy = "compra") // ✅ CORRECTO
-
+    @JsonBackReference(value = "compra-detalle")
     private List<ComprasProducto> productos;
 
     public String getEstado() {

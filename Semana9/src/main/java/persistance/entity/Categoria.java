@@ -1,5 +1,6 @@
 package persistance.entity;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 
 import java.util.List;
@@ -13,14 +14,11 @@ public class Categoria {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_categoria")
     private Integer idCategoria;
-
     private String descripcion;
     private Boolean estado;
-
     @OneToMany(mappedBy = "categoria")
+    @JsonManagedReference(value = "categoria-productos")
     private List<Producto> productos;
-
-
     public Integer getIdCategoria() {
         return idCategoria;
     }

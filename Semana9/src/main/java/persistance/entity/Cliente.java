@@ -1,5 +1,6 @@
 package persistance.entity;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 
 import java.util.List;
@@ -17,9 +18,8 @@ public class Cliente {
     private String direccion;
 
     @OneToMany(mappedBy = "cliente")
+    @JsonManagedReference(value = "cliente-compras")
     private List<Compra> compras;
-
-
     @Column(name="correo_electronico")
     private String correoElectronico;
 

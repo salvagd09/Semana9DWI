@@ -1,7 +1,8 @@
 package domain.service;
 
-import com.UTP.TpIntegrado.market.domain.Product;
-import com.UTP.TpIntegrado.market.domain.repository.ProductRepository;
+
+import domain.Product;
+import domain.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;

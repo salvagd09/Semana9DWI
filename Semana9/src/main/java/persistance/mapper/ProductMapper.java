@@ -1,11 +1,12 @@
 package persistance.mapper;
 
-import com.UTP.TpIntegrado.market.domain.Product;
-import com.UTP.TpIntegrado.market.persistance.entity.Producto;
+
+import domain.Product;
 import org.mapstruct.InheritInverseConfiguration;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.Mappings;
+import persistance.entity.Producto;
 
 import java.util.List;
 

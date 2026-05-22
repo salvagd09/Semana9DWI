@@ -1,7 +1,8 @@
 package web.controller;
 
-import com.UTP.TpIntegrado.market.domain.Product;
-import com.UTP.TpIntegrado.market.domain.service.ProductService;
+
+import domain.Product;
+import domain.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

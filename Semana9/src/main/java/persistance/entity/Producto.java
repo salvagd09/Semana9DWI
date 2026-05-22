@@ -1,6 +1,7 @@
 package persistance.entity;
 
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 
 import java.util.List;
@@ -33,11 +34,8 @@ public class Producto {
 
     @ManyToOne
     @JoinColumn(name = "id_categoria", insertable = false, updatable = false)
+    @JsonBackReference(value = "producto-detalle")
     private Categoria categoria;
-
-
-
-
     public String getIdProducto() {
         return idProducto;
     }

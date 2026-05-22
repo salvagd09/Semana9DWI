@@ -1,7 +1,8 @@
 package persistance.crud;
 
-import com.UTP.TpIntegrado.market.persistance.entity.Producto;
+
 import org.springframework.data.repository.CrudRepository;
+import persistance.entity.Producto;
 
 import java.util.List;
 import java.util.Optional;

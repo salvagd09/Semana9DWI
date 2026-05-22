@@ -1,6 +1,8 @@
 package domain.repository;
 
-import com.UTP.TpIntegrado.market.domain.Product;
+
+
+import domain.Product;
 
 import java.util.List;
 import java.util.Optional;

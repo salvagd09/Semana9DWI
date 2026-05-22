@@ -1,12 +1,12 @@
 package persistance;
 
-import com.UTP.TpIntegrado.market.domain.Product;
-import com.UTP.TpIntegrado.market.domain.repository.ProductRepository;
-import com.UTP.TpIntegrado.market.persistance.crud.ProductoCrudRepository;
-import com.UTP.TpIntegrado.market.persistance.entity.Producto;
-import com.UTP.TpIntegrado.market.persistance.mapper.ProductMapper;
+import domain.Product;
+import domain.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+import persistance.crud.ProductoCrudRepository;
+import persistance.entity.Producto;
+import persistance.mapper.ProductMapper;
 
 import java.util.List;
 import java.util.Optional;
@@ -15,11 +15,9 @@ import java.util.Optional;
 public class ProductoRepository  implements ProductRepository {
     @Autowired
     private ProductoCrudRepository productoCrudRepository;
-
     //Variable nueva agregada
     @Autowired
     private ProductMapper mapper;
-
      //Funcion Actualizada
      @Override
     public List<Product> getAll(){
@@ -45,7 +43,6 @@ public class ProductoRepository  implements ProductRepository {
     public Optional<Product> getProduct(int productId) {
         return productoCrudRepository.findById(productId).map(producto ->mapper.toProduct(producto));
     }
-
     //Funcion Actualizada
     @Override
     public Product save(Product product) {
