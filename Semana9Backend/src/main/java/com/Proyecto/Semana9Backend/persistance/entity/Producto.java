@@ -11,7 +11,7 @@ public class Producto {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_producto")
-    private String idProducto;
+    private Integer idProducto;
 
     private String nombre;
 
@@ -34,11 +34,11 @@ public class Producto {
     @JoinColumn(name = "id_categoria", insertable = false, updatable = false)
     @JsonBackReference(value = "producto-detalle")
     private Categoria categoria;
-    public String getIdProducto() {
+    public Integer getIdProducto() {
         return idProducto;
     }
 
-    public void setIdProducto(String idProducto) {
+    public void setIdProducto(Integer idProducto) {
         this.idProducto = idProducto;
     }
 
