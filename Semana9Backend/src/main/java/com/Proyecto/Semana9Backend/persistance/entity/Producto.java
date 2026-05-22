@@ -1,10 +1,8 @@
-package persistance.entity;
+package com.Proyecto.Semana9Backend.persistance.entity;
 
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
-
-import java.util.List;
 
 @Entity
 @Table(name = "productos")

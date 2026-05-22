@@ -1,4 +1,4 @@
-package domain;
+package com.Proyecto.Semana9Backend.domain;
 
 public class Product {
     private int productId;

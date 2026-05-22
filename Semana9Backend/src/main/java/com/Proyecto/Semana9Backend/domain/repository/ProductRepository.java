@@ -1,8 +1,8 @@
-package domain.repository;
+package com.Proyecto.Semana9Backend.domain.repository;
 
 
 
-import domain.Product;
+import com.Proyecto.Semana9Backend.domain.Product;
 
 import java.util.List;
 import java.util.Optional;

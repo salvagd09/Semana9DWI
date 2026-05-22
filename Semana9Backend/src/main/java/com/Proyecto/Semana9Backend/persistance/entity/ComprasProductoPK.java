@@ -1,4 +1,4 @@
-package persistance.entity;
+package com.Proyecto.Semana9Backend.persistance.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;

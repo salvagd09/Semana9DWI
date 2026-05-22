@@ -1,8 +1,8 @@
-package persistance.crud;
+package com.Proyecto.Semana9Backend.persistance.crud;
 
 
 import org.springframework.data.repository.CrudRepository;
-import persistance.entity.Producto;
+import com.Proyecto.Semana9Backend.persistance.entity.Producto;
 
 import java.util.List;
 import java.util.Optional;

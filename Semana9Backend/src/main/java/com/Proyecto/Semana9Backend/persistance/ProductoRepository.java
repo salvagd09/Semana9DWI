@@ -1,12 +1,12 @@
-package persistance;
+package com.Proyecto.Semana9Backend.persistance;
 
-import domain.Product;
-import domain.repository.ProductRepository;
+import com.Proyecto.Semana9Backend.domain.Product;
+import com.Proyecto.Semana9Backend.domain.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
-import persistance.crud.ProductoCrudRepository;
-import persistance.entity.Producto;
-import persistance.mapper.ProductMapper;
+import com.Proyecto.Semana9Backend.persistance.crud.ProductoCrudRepository;
+import com.Proyecto.Semana9Backend.persistance.entity.Producto;
+import com.Proyecto.Semana9Backend.persistance.mapper.ProductMapper;
 
 import java.util.List;
 import java.util.Optional;

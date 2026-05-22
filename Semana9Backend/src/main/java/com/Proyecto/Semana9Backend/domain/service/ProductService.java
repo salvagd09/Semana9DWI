@@ -1,8 +1,8 @@
-package domain.service;
+package com.Proyecto.Semana9Backend.domain.service;
 
 
-import domain.Product;
-import domain.repository.ProductRepository;
+import com.Proyecto.Semana9Backend.domain.Product;
+import com.Proyecto.Semana9Backend.domain.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;

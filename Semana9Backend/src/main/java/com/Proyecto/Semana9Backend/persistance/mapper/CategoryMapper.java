@@ -1,13 +1,13 @@
-package persistance.mapper;
+package com.Proyecto.Semana9Backend.persistance.mapper;
 
 
 
-import domain.Category;
+import com.Proyecto.Semana9Backend.domain.Category;
 import org.mapstruct.InheritInverseConfiguration;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.Mappings;
-import persistance.entity.Categoria;
+import com.Proyecto.Semana9Backend.persistance.entity.Categoria;
 @Mapper(componentModel = "spring")
 public interface CategoryMapper {
 

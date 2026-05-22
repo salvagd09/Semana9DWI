@@ -1,12 +1,12 @@
-package persistance.mapper;
+package com.Proyecto.Semana9Backend.persistance.mapper;
 
 
-import domain.Product;
+import com.Proyecto.Semana9Backend.domain.Product;
 import org.mapstruct.InheritInverseConfiguration;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.Mappings;
-import persistance.entity.Producto;
+import com.Proyecto.Semana9Backend.persistance.entity.Producto;
 
 import java.util.List;
 

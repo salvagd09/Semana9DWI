@@ -1,8 +1,8 @@
-package web.controller;
+package com.Proyecto.Semana9Backend.controller;
 
 
-import domain.Product;
-import domain.service.ProductService;
+import com.Proyecto.Semana9Backend.domain.Product;
+import com.Proyecto.Semana9Backend.domain.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
