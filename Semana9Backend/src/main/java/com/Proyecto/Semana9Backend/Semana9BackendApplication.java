@@ -1,4 +1,4 @@
-package com.Proyecto.Semana9;
+package com.Proyecto.Semana9Backend;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
