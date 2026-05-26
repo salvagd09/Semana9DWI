@@ -49,7 +49,7 @@ public class Product {
         this.stock = stock;
     }
 
-    public Boolean isActive() {
+    public Boolean getActive() {
         return active;
     }
 
