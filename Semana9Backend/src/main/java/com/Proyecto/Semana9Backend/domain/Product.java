@@ -3,10 +3,10 @@ package com.Proyecto.Semana9Backend.domain;
 public class Product {
     private Integer productId;
     private String name;
-    private int categoryId;
-    private double price;
-    private int stock;
-    private boolean active;
+    private Integer categoryId;
+    private Double price;
+    private Integer stock;
+    private Boolean active;
     private Category category;
 
     public Integer getProductId() {
@@ -25,35 +25,35 @@ public class Product {
         this.name = name;
     }
 
-    public int getCategoryId() {
+    public Integer getCategoryId() {
         return categoryId;
     }
 
-    public void setCategoryId(int categoryId) {
+    public void setCategoryId(Integer categoryId) {
         this.categoryId = categoryId;
     }
 
-    public double getPrice() {
+    public Double getPrice() {
         return price;
     }
 
-    public void setPrice(double price) {
+    public void setPrice(Double price) {
         this.price = price;
     }
 
-    public int getStock() {
+    public Integer getStock() {
         return stock;
     }
 
-    public void setStock(int stock) {
+    public void setStock(Integer stock) {
         this.stock = stock;
     }
 
-    public boolean isActive() {
+    public Boolean isActive() {
         return active;
     }
 
-    public void setActive(boolean active) {
+    public void setActive(Boolean active) {
         this.active = active;
     }
 
