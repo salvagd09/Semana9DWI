@@ -16,7 +16,31 @@
     outline-offset: 2px;
   }
 }
-
+.App table{
+  margin:5px auto;
+}
+.App table{
+    border:2px black solid;
+}
+.botones{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  gap:10px;
+  margin:5px 0;
+}
+.botones .BotonA{
+  background-color: rgb(229, 52, 52);
+}
+.botones .BotonE{
+  background-color: rgb(32, 88, 183);
+  color:white;
+}
+.botones .BotonA,.botones .BotonE{
+    padding:10px;
+    border-radius:5px;
+    cursor:pointer;
+}
 .hero {
   position: relative;
 
